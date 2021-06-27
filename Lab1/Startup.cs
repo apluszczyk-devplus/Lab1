@@ -26,10 +26,8 @@ namespace Lab1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<MvcBookContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("MvcBookContext")));
-            services.AddDbContext<MvcClientContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString("MvcClientContext")));
+            services.AddDbContext<MvcContext>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("MvcContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

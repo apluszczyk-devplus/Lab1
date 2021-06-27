@@ -3,13 +3,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Lab1.Data
 {
-    public class MvcClientContext: DbContext
+    public class MvcContext: DbContext
     {
-        public MvcClientContext(DbContextOptions<MvcClientContext> options) : base(options)
+        public MvcContext(DbContextOptions<MvcContext> options) : base(options)
         {
 
         }
 
+        public DbSet<Book> Book { get; set; }
         public DbSet<Client> Client { get; set; }
+
     }
 }

@@ -12,9 +12,9 @@ namespace Lab1.Controllers
 {
     public class BooksController : Controller
     {
-        private readonly MvcBookContext _context;
+        private readonly MvcContext _context;
 
-        public BooksController(MvcBookContext context)
+        public BooksController(MvcContext context)
         {
             _context = context;
         }

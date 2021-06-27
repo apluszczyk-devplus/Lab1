@@ -12,9 +12,9 @@ namespace Lab1.Controllers
 {
     public class ClientsController : Controller
     {
-        private readonly MvcClientContext _context;
+        private readonly MvcContext _context;
 
-        public ClientsController(MvcClientContext context)
+        public ClientsController(MvcContext context)
         {
             _context = context;
         }
